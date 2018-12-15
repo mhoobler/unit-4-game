@@ -1,34 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
-		<script defer src="object-test.js"></script>
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+	<script defer src="object-test.js"></script>
 	
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-		<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
-	<div class="fluid-container">
+	<div class="container">
+		<div class="row title">
+			<div class="col-md-12 title text-center">
+				<h2 id="title">Mix and Match</h2> 
+			</div>
+		</div>
 		<div class="row">
-			<div class="col-md-6 play-box">
+			<div class="col-md-1 margin"></div>
+			<div class="card col-md-4" style="height: 30rem">
+				<div class="card-body">
 				<div class="row">
-					<div class="col-md-4" id="target-number">
-					</div>
-					<div class="col-md-4" id="current-total">
-						54
-					</div>
-					<div class="col-md-4" id="current-score">
+					<div class="col-md-12 text-center" style="height: 10rem">
+						<h4>Current Score:&nbsp<span id="current-score"></span></h4>
 					</div>
 				</div>
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<p>Glass Size:&nbsp<span id="target-number"></span>&nbsp Current Volume:&nbsp <span id="current-total"></span><p>
+					</div>
+				</div>
+				<div class="row">
+					<h6 class="text-center">Instructions:</h6>
+					<p class="text-justify">Your goal is to make the perfect cocktail. Click the bottle to add to the "current volume" and try to match the "glass size". The more complex the combo, the more you'll score, but be careful. Don't overfill the glass!.</p>
+				</div>
 			</div>
-			<div class="col-md-6 play-box" id="crystal-container">
-				<div class="row" id="crystal-row">
+			</div>
+			<div class="col-md-2 margin"></div>
+			<div class="card col-md-4" style="height: 30rem">
+				<div class="card-body">
+					<h4 class="card-title text-center">Title</h4>
+					<div class"row" id="crystal-row">
+					</div>
 				</div>
 			</div>
 		</div>
-		<div id="cheat">cheat</div>
 	</div>
-
 </body>
 </html>
