@@ -1,0 +1,29 @@
+html, body {
+	height:100%;
+}
+
+body{
+	background-image: url("background2.jpg");
+	background-size: cover;
+}
+
+.container {
+	height: 100%;
+}
+
+.title {
+	height: 20%;
+}
+
+#title {
+	padding-top: .5%;
+	color: white;
+}
+
+.card {
+	border: 6px solid #804000;
+}
+
+.crystal {
+	margin: 0% 10% 0% 10%;
+}
